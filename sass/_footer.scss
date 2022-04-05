@@ -1,0 +1,28 @@
+#footer{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+ }
+$redes:(
+    h3: 1rem
+);
+$h1: map-get($redes, h3);
+
+h3{
+    font-size: 1rem;
+    margin: 10px
+}
+    .iconoface{
+        @extend h3;
+        display: flex;
+        transition: transform 2s;
+        width: 70px;
+        height: 70px;
+        border-radius: 5px;
+    }
+    .iconoface:hover{
+        transform: scale(1.1);
+        width: 70px;
+        height: 70px;
+        border-radius: 5px;
+    }

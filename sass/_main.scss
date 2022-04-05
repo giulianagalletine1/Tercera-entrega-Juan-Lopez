@@ -1,0 +1,243 @@
+.bodyinicio{
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;  
+}
+
+
+.promo {
+    padding-top: 350px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:60%;
+    margin:auto;
+    position:relative;
+    z-index: 2;
+  }
+  
+  
+  .promo h1 {
+      font-size: 3.5rem;
+      text-align:center;
+      color:#f3f3f3;
+      font-weight: 700;
+  }
+  
+  
+  .promo p {
+      font-size: 2.5rem;
+      text-align:center;
+      color: #f3f3f3;
+      font-weight: 900;
+  }
+  
+  button {
+      display: inline-block;
+      border:none;
+      height:50px;
+      border-radius: 30px;
+      padding: 10px 0;
+      width: 200px;
+      background-color:#f5be09;
+      font-size: 1.8rem;
+      color: #3f3f3f;
+      font-weight: 800;
+      transition: 150ms;
+      margin-top: 40px;
+  }
+  button:focus {
+      outline:none;
+  }
+  
+  button:hover{
+      transform:translate(0, -5px) ;
+  }
+  
+#hero {
+   min-height: 100vh;
+   position:relative;
+} 
+
+video {
+   position:absolute;
+   top: 0;
+   left:0;
+   width:100%;
+   height:100%;
+   object-fit: cover;
+}
+
+.capa {
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   background:#1c1c1d;
+   opacity:0.5;
+   mix-blend-mode: overlay;
+}
+.titulo {
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'Smokum', cursive;
+    float: left;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+  
+  .titulo:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    width: 300px;
+    background-color: honeydew;
+  }
+  
+  .btn {
+    background: #c44569;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+  }
+  nav ul {
+    list-style: none;
+    background-color: #444744;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 70px;
+    float: right;
+  }
+  
+  nav ul a {
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: block;
+  }
+  
+  nav ul a:hover {
+    background-color: antiquewhite;
+    color: darkred;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+    font-size: 0;
+  }
+  
+  li {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 14px;
+  }
+  @mixin parrafos($margin, $color) {
+    margin: $margin;
+    color: black;
+  }
+  .lead {
+    @include parrafos(10px,black)
+  }
+  .mapa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 250px;
+    height: 150px;
+    margin-top: 20px;
+  }
+  
+  #cajas {
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 565px;
+    height: 200px;
+    opacity: .8;
+    border: double 2px grey;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    color: black;
+  }
+  
+  #cajas:hover {
+    opacity: 1;
+    border: solid white;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    color: whitesmoke;
+  }
+  
+  #cajas:hover p {
+    text-align: start;
+    color: whitesmoke;
+  }
+  
+  #parrafo {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1200px;
+    opacity: .8;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+  }
+  
+  #parrafo:hover {
+    opacity: 1;
+    -webkit-transform: scale(0.5) translateY(bottom, top);
+            transform: scale(0.5) translateY(bottom, top);
+  }
+  #cajitas{
+    margin-bottom: 20px;
+    display: flex;
+    width: 375px;
+    height: 250px;
+    opacity: .8;
+    border: double 2px grey ;
+    transition: transform .5s;
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+    color: black;
+ }
+ #cajitas:hover{
+    opacity: 1;
+   border: solid black;
+   transform: scale(1.1);
+   color: whitesmoke;
+ }
+ #cajitasubi{
+    margin-bottom: 20px;
+    display: flex;
+    width: 550px;
+    height: 300px;
+    opacity: .8;
+    border: double 2px grey ;
+    transition: transform .5s;
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+ }
+ #cajitasubi:hover{
+    opacity: 1;
+   border: solid black;
+   transform: scale(1.1);
+   color: whitesmoke;
+ }
